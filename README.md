@@ -38,18 +38,18 @@ These simulators are available in:
 
 1. Clone the repo```sh git clone https://github.com/urbancomp/fogarch.git```
 2. First, we will use the MobilityLayer folder. That is the OMNET++ scenario.
-3. Next, import the simulation project to the OMNET++. You can do it using the import funcion in the OMNET++.
+3. Next, import the simulation project to the OMNET++. You can do it using the import function in the OMNET++.
 
 4. After that, run the veins socket connection `sumo-launchd.py`
 ``` sh
 /home/edsonmottac/src/veins-4.7.1/sumo-launchd.py -vv -c sumo-gui
 ```
 
-5. The socket wil be listernin a specifical `port 4447`
+5. The socket will be listening to a specific port  `port 4447`
 
 ### Installation of the FogLayer
 
-1. Now, we will use the FogLayer folder. This folder store the core of the our fog computing implementation.
+1. Now, we will use the FogLayer folder. This folder store the core of our fog computing implementation.
 
 2. In the command prompt navigate to the root folder and start the `server.py`
 
@@ -57,7 +57,7 @@ These simulators are available in:
 /usr/bin/python3 server.py
 ```
 
-3. After that, you should be start the OMNET+ simulation.
+3. After that, you should start the OMNET+ simulation.
 
 4. That’s it, the data reduction process should be started 
 
