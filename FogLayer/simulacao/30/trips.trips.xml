@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2020-03-30 15:08:56.319073 by $Id$
+  options: -n colonia.net.xml -r colonia.rou.xml -e 30 -L
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="0.00" from="23647126" to="23840712#4"/>
+    <trip id="1" depart="1.00" from="8716807#2" to="-23840712#0"/>
+    <trip id="2" depart="2.00" from="22959550#0" to="290365598#1"/>
+    <trip id="3" depart="3.00" from="-23840712#4" to="8716807#3"/>
+    <trip id="4" depart="4.00" from="23283470#2" to="22959550#3"/>
+    <trip id="5" depart="5.00" from="23647118" to="297047308"/>
+    <trip id="6" depart="6.00" from="-23840712#3" to="8716807#2"/>
+    <trip id="7" depart="7.00" from="23840712#4" to="290365598#1"/>
+    <trip id="8" depart="8.00" from="8716807#2" to="23840935"/>
+    <trip id="9" depart="9.00" from="8716807#5" to="28675493#2"/>
+    <trip id="10" depart="10.00" from="-23840712#3" to="-297047307"/>
+    <trip id="11" depart="11.00" from="23283470#2" to="22959550#0"/>
+    <trip id="12" depart="12.00" from="-28675493#2" to="8716807#3"/>
+    <trip id="13" depart="13.00" from="23283470#2" to="23283470#3"/>
+    <trip id="14" depart="14.00" from="297047308" to="23840887#4"/>
+    <trip id="15" depart="15.00" from="23840712#2" to="22959550#0"/>
+    <trip id="16" depart="16.00" from="28691861" to="23840888#1"/>
+    <trip id="17" depart="17.00" from="-28675493#0" to="23840712#3"/>
+    <trip id="18" depart="18.00" from="-23840712#2" to="-297047308"/>
+    <trip id="19" depart="19.00" from="28675493#0" to="627838794"/>
+    <trip id="20" depart="20.00" from="8716807#6" to="-8716807#3"/>
+    <trip id="21" depart="21.00" from="23283470#0" to="28675493#1"/>
+    <trip id="22" depart="22.00" from="23840888#0" to="23840935"/>
+    <trip id="23" depart="23.00" from="-8716807#5" to="28675493#2"/>
+    <trip id="24" depart="24.00" from="23840888#1" to="28691861"/>
+    <trip id="25" depart="25.00" from="23840887#2" to="23840887#1"/>
+    <trip id="26" depart="26.00" from="23283470#1" to="23840712#4"/>
+    <trip id="27" depart="27.00" from="23840712#1" to="-290365598#1"/>
+    <trip id="28" depart="28.00" from="-28675494" to="-8716807#4"/>
+    <trip id="29" depart="29.00" from="-28675493#2" to="28675493#2"/>
+</routes>
