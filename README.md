@@ -32,28 +32,30 @@ These simulators are available in:
 * https://veins.car2x.org/download/
 * https://www.eclipse.org/sumo/
 
+
+
 ### Installation of the simulation scenario
 
-1. Clone the repo```sh git clone https://github.com/your_username_/Project-Name.git```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+1. Clone the repo```sh git clone https://github.com/urbancomp/fogarch.git```
+2. First, we will use the MobilityLayer folder. That is the OMNET++ scenario.
+3. Next, import the simulation project to the OMNET++. You can do it using the import funcion in the OMNET++.
 
-### Installation of the fog archtecture
-1. Clone the repo```sh git clone https://github.com/your_username_/Project-Name.git```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+4. After that, run the veins socket connection `sumo-launchd.py`
+```/home/edsonmottac/src/veins-4.7.1/sumo-launchd.py -vv -c sumo-gui```
+
+5. The socket wil be listernin a specifical port 4447
+
+### Installation of the FogLayer
+
+1. Now, we will use the FogLayer folder. This folder store the core of the our fog computing implementation.
+
+2. In the command prompt navigate to the root folder and start the server.py
+```/usr/bin/python3 server.py```
+
+3. After that, you should be start the OMNET+ simulation.
+
+4. That’s it, the data reduction process should be started 
+
 
 ## Usage
 
