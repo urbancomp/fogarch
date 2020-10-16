@@ -1,8 +1,8 @@
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Multi-Layered Fog Computing Architecture for DataReduction in a Traffic Congestion Detection System
 
-Multi-Layered Fog Computing Architecture for DataReduction in a Traffic Congestion Detection System
+
 The Multi-Layered Fog Computing Architecture uses Cloud as a macro-control of the geographic position of all vehicles, acquiring traffic flow data to perform traffic congestion detection. In the network edge, the Multi-Layered Fog Computing Architecture uses traditional and cluster-based algorithms to reduce the amount of traffic data (as position and speed information) transmitted by all vehicles.
 
 The cluster-based algorithms use the spatial density of the road map for clustering the traffic data, reducing the amount of data that is sent from the vehicular network to the Cloud. The results have shown that cluster-based algorithms in our Multi-Layered Fog Computing Architecture can achieve high accuracy on traffic congestion detection at a lower cost, even in an overloaded scenario.
