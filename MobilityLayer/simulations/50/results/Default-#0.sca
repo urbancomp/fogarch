@@ -1,0 +1,82 @@
+version 2
+run Default-0-20200404-22:22:40-17490
+attr configname Default
+attr datetime 20200404-22:22:40
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network veins_myproject.src.Scenario
+attr processid 17490
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 6000m
+param *.playgroundSizeY 6000m
+param *.playgroundSizeZ 3m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.moduleType "\"veins_myproject.src.car.MyCar\""
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"sumo.launchd.xml\")"
+param *.rsu[0].mobility.x 289
+param *.rsu[0].mobility.y 432
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"veins_myproject.src.MyRSUApp\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch true
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 50mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.sensitivity -89dBm
+param *.**.nic.phy80211p.useThermalNoise true
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.node[*].applType "\"veins_myproject.src.MyApplicaton\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons true
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 0.1s
+param *.node[*].veinsmobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+
+scalar Scenario.manager roiArea 0
+scalar Scenario.rsu[0].appl generatedWSMs 0
+scalar Scenario.rsu[0].appl receivedWSMs 0
+scalar Scenario.rsu[0].appl generatedBSMs 0
+scalar Scenario.rsu[0].appl receivedBSMs 0
+scalar Scenario.rsu[0].appl generatedWSAs 0
+scalar Scenario.rsu[0].appl receivedWSAs 0
+scalar Scenario.rsu[0].nic.phy80211p busyTime -nan
+scalar Scenario.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar Scenario.rsu[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar Scenario.rsu[0].nic.mac1609_4 SentPackets 0
+scalar Scenario.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar Scenario.rsu[0].nic.mac1609_4 SNIRLostPackets 0
+scalar Scenario.rsu[0].nic.mac1609_4 RXTXLostPackets 0
+scalar Scenario.rsu[0].nic.mac1609_4 TotalLostPackets 0
+scalar Scenario.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar Scenario.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar Scenario.rsu[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar Scenario.rsu[0].nic.mac1609_4 SlotsBackoff 0
+scalar Scenario.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar Scenario.rsu[0].nic.mac1609_4 totalBusyTime 0
+

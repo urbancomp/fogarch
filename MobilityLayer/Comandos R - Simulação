@@ -1,0 +1,116 @@
+plot(resultadosveins$`Tempo da Simulação`, resultadosveins$`Média Velociodade`, ylim=c(0,60))
+barplot(resultadosveins$`Média Velociodade`, main="Congestionamento", xlab="Tempo de Simulação", ylab = "Média de Velocidades", resultadosveins$`Tempo da Simulação`, ylim=c(0,60))
+
+x <- table(resultadosveins$`Nível de Congestionamento`)
+class(x)
+x <- xtabs(~Nível de Congestionamento, data = resultadosveins)
+class(x)
+barplot(x,
+        xlab = "Tipos de engarrafamento",
+        ylab = "Frequência absoluta",
+        col = c("black", "red", "green4", "Yellow"))
+
+
+http://www.leg.ufpr.br/~walmes/ensino/dsbd/7-vis-graphics.html
+
+hist(resultadosveins$`Média Velociodade`,
+     xlab = "Média de Velocidade (KM)",
+     ylab = "Frequência absoluta",
+     col = "orange")
+rug(resultadosveins$`Média Velociodade`)
+
+
+plot(resultadosveins$`Média Velociodade` ~ resultadosveins$`Tempo da Simulação`,
+     data = resultadosveins,
+     xlab = "Tempo de Simulação (seg)",
+     ylab = "Média de Velocidade (KM/H)")
+with(resultadosveins, {
+    lines(lowess(x = resultadosveins$`Tempo da Simulação`, y = resultadosveins$`Média Velociodade`),
+          lwd = 2,
+          col = "#ff0050")
+})
+
+
+plot(resultadosveins$`Tempo da Simulação`,resultadosveins$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", type='l')
+
+
+plot(resultadosveins$`Tempo da Simulação`,resultadosveins$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", type='l') 
+title("Gráfico das velocidades")
+
+plot(resultadosveinscompleto$`Tempo da Simulação`,resultadosveinscompleto$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", ylim = c(0,80), type='l') 
+title("Gráfico das velocidades ao longo da Simulação - Completo") 
+lines(c(0, 30), c(10, 10), lwd = 2)
+lines(c(0, 30), c(30, 30), lwd = 2, col="red")
+lines(c(0, 30), c(60, 60), lwd = 2, col="yellow")
+text(5, 5, "Caótico", font = 20)
+text(5, 20, "Intenso", font = 20)
+text(5, 55, "Moderado", font = 20)
+text(4, 70, "Livre", font = 20)
+
+plot(resultadosveinsreduzido$`Tempo da Simulação`,resultadosveinsreduzido$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", ylim = c(0,80), type='l') 
+title("Gráfico das velocidades ao longo da Simulação - Reduzido") 
+lines(c(0, 30), c(10, 10), lwd = 2)
+lines(c(0, 30), c(30, 30), lwd = 2, col="red")
+lines(c(0, 30), c(60, 60), lwd = 2, col="yellow")
+text(5, 5, "Caótico", font = 20)
+text(5, 20, "Intenso", font = 20)
+text(5, 55, "Moderado", font = 20)
+text(4, 70, "Livre", font = 20)
+
+
+plot(resultadosveinscompleto$`Tempo da Simulação`,resultadosveinscompleto$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", ylim = c(0,80), type='l') 
+title("Gráfico das velocidades ao longo da Simulação - Completo") 
+lines(resultadosveinsreduzido$`Tempo da Simulação`,resultadosveinsreduzido$`Média Velociodade`, lwd = 2, col="green")
+lines(c(0, 30), c(10, 10), lwd = 2)
+lines(c(0, 30), c(30, 30), lwd = 2, col="red")
+lines(c(0, 30), c(60, 60), lwd = 2, col="yellow")
+text(5, 5, "Caótico", font = 20)
+text(5, 20, "Intenso", font = 20)
+text(5, 55, "Moderado", font = 20)
+text(4, 70, "Livre", font = 20)
+
+certo aqui
+
+plot(resultadosveinscompleto$`Tempo da Simulação`,resultadosveinscompleto$`Média Velociodade`,xlab = "Tempo de Simulação (seg)", ylab = "Média de Velocidade (KM/H)", ylim = c(0,80), type='l') 
+title("Gráfico das velocidades ao longo da Simulação - Completo x Reduzido") 
+lines(resultadosveinsreduzido$`Tempo da Simulação`,resultadosveinsreduzido$`Média Velociodade`, lwd = 2, col="orange")
+lines(c(0, 30), c(10, 10), lwd = 2)
+lines(c(0, 30), c(30, 30), lwd = 2, col="red")
+lines(c(0, 30), c(60, 60), lwd = 2, col="yellow")
+text(5, 5, "Caótico", font = 20)
+text(5, 20, "Intenso", font = 20)
+text(5, 55, "Moderado", font = 20)
+text(4, 70, "Livre", font = 20)
+
+
+cols <- c("#db0d9d", "#0c0099")
+levels(resultadosveins$'Nível de Congestionamento')
+
+plot(resultadosveins$`Média Velociodade` ~ resultadosveins$`Tempo da Simulação`,
+     data = resultadosveins,
+     type = "n",
+     xlab = "Tempo de Simulação (seg)",
+     ylab = "Média de Velocidade (KM/H)")
+i <- 0
+by(resultadosveins,
+   INDICES = resultadosveins$`Nível de Congestionamento`,
+   FUN = function(data) {
+       i <<- i + 1
+       with(data, {
+           points(x = resultadosveins$`Tempo da Simulação`, y = resultadosveins$`Média Velociodade`, col = cols[i], pch = 19)
+           lines(lowess(x = resultadosveins$`Tempo da Simulação`, y = resultadosveins$`Média Velociodade`),
+                 col = cols[i],
+                 lwd = 1.5)
+           rug(resultadosveins$`Tempo da Simulação`, side = 1, col = cols[i])
+           rug(resultadosveins$`Média Velociodade`, side = 4, col = cols[i])
+           invisible()
+       })
+   })
+
+legend("top",
+       lty = 1,
+       col = cols,
+       legend = levels(resultadosveins$`Nível de Congestionamento`),
+       lwd = 1.5,
+       bty = "n")
+grid()

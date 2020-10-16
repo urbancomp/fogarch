@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+	<copy file="colonia.net.xml" />
+	<copy file="colonia.rou.xml" />
+	<copy file="colonia.poi.xml" />
+	<copy file="sumo.settings.xml" />
+	<copy file="sumo.sumocfg" type="config" />
+</launch>
