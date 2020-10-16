@@ -65,26 +65,36 @@ The Multi-Layered Fog Computing Architecture for DataReduction in a Traffic Cong
   <table>
     <tr>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_baseline3.jpg" alt="Logo" width="300" height="300">
       </td>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_1to23.jpg" alt="Logo" width="300" height="300">
       </td>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_limite3.jpg" alt="Logo" width="300" height="300">
       </td>
     </tr>
     <tr>
+      <td align="center">Algorithm Baseline</td>
+      <td align="center">Algorithm 1 to 2</td>
+      <td align="center">Algorithm Limit</td>
+    </tr>
+    <tr>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_random3.jpg" alt="Logo" width="300" height="300">
       </td>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_dbscan3.jpg" alt="Logo" width="300" height="300">
       </td>
       <td>
-          <img src="images/logo.png" alt="Logo" width="80" height="80">
+          <img src="results/mapa_50_xmeans3.jpg" alt="Logo" width="300" height="300">
       </td>
     </tr>
+    <tr>
+      <td align="center">Algorithm Random</td>
+      <td align="center">Algorithm DBSCAN</td>
+      <td align="center">Algorithm X-MEANS</td>
+    </tr>    
   </table>
 </p>
 
